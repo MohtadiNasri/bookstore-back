@@ -3,5 +3,12 @@
 
     <persistence-unit name="bookStorePU">
         <class>com.pluralsight.bookstore.model.Book</class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.script.action" value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.script.create-target" value="bookStoreCreate.ddl"/>
+            <property name="javax.persistence.schema-generation.script.drop-target" value="bookStoreDrop.ddl"/>
+
+        </properties>
     </persistence-unit>
 </persistence>
