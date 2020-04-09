@@ -13,7 +13,7 @@ public class BookRepository {
     private EntityManager entityManager;
 
     public Book find(Long id){
-        entityManager.find(Book.class, id);
+        return entityManager.find(Book.class, id);
     }
     public Book create(Book book){
         entityManager.persist(book);
