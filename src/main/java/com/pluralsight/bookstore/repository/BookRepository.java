@@ -17,6 +17,7 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 * SUPPORTS inherit from caller transaction .. perfect for read only
 * */
 
+//Select BookRepository and Press Alt + Enter to generate Test Class
 @Transactional(SUPPORTS)
 public class BookRepository {
 
