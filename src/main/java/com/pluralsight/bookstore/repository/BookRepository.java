@@ -21,7 +21,7 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @Transactional(SUPPORTS)
 public class BookRepository {
 
-    @PersistenceContext(unitName = "bookStorPU")
+    @PersistenceContext(unitName = "bookStorePU")
     private EntityManager entityManager;
 
     @Transactional(SUPPORTS)
